@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+@media (min-width: 825px){
+		* {margin: 0;}
+		header {width: 100%; background-color: #fff; 
+		display: flex; flex-direction: column;
+		position: absolute; top: 0; left: 0; opacity: 1.0;}
+		header #logobox {background-color: none; display: flex; justify-content: space-between; align-items: center;}
+		header #logobox #logo {width: 180px; height: 50px; background-color: none;}
+		header #logobox #logo a img {width: 100%; height: 100%; padding: 5px;}
+		header #logobox .list {cursor: pointer; width: 30px; height: 30px; background-color: none;}
+
+		header #navbox #navi {background-color: none;}
+		header #navbox #navi ul {margin: 0 0 0 -40px;}
+		header #navbox #navi ul li:nth-child(2) {color: #06284a; font-weight: bold; line-height: 30px; padding: 10px; display: block;}
+		header #navbox #navi ul li a {text-decoration: none; color: #06284a; font-weight: bold; background-color: none; line-height: 30px; padding: 10px; display: block;}
+		header #navbox #navi ul li a:hover {color: #fff; background-color: #303942; display: flex; transition: all 0.5s}
+
+		header .snsbox {width: 120px; height: 50px; background-color: none; display: flex; justify-content: space-around; align-items: center;}
+		header .snsbox .iconbox {width: 30px; height: 30px; background-color: none; padding: 5px; margin: 5px;}
+		header .snsbox .iconbox a img {width: 15px; height: 15px;}
+
+		header #navi {display: none;}
+		header #list {display: block;}
+		header .snsbox {display: none;}
+
+		/*main 시작*/
+		#main {width:100%; height:auto; background-color: none;}
+
+		/*slider*/
+		#slider{width:100%; height: 400px; background:url("../img/slider_2.jpg")fixed; background-size: cover; background-position: center;}
+		#slider > h1 {font-size: 30px; text-align: center; background-color:none; color: #fff; padding: 180px 0 0 0px; margin: 0;}
+		#slider > h3 {font-size: 25px; text-align: center; background-color:none; color: #fff; margin: 15px auto;}
+
+		#sub {width: 80%; height: auto; background-color: none; display: flex; flex-direction: column; align-items: center; margin: 100px auto;}
+		#sub #post {width: 100%; height: auto; background-color: none; margin: 0;}
+		#sub #post article {width: 100%; height: auto; background-color: none; margin: 0 0 100px 0px; box-shadow: 0 0 30px #eee; border-radius: 10px;}
+
+		/*article - post*/
+		#sub #post article h2 {padding: 20px 0px 20px 10px;}
+		#sub #post article h3 {padding: 10px;}
+		#sub #post article h4 {padding: 0 0 10px 10px;}
+		#sub #post article p {font-size: 15px; padding: 10px; line-height: 25px;}
+		#sub #post article #P1 {width: 100%; height: 400px;}
+		#sub #post article #P2 {width: 100%; height: 400px;}
+		#sub #post article #P3 {width: 100%; height: 400px;}
+		#sub #post article .P {width: 50px; height: 50px; border-radius: 50px; margin: 0 0 0 20px;}
+
+		#sub #post article .box1 {display: flex; background-color: none; align-items: center;}
+		#sub #post article .box1 span {margin: 0 0 0 10px;}
+		#sub #post article .box2 {display: flex; justify-content: flex-end;}
+		#sub #post article .box2 span {margin: 10px 10px 0 0px;}
+
+		#sub > #post > article > .box2 > span > a {text-decoration: none; font-size: 15px;}
+		#sub > #post > article > .box2 > span > a > .box3 {width: 20px; height: 20px;}
+
+		/*article - sidebar*/
+		#sub #sidebar {width: 80%; height: auto; background-color: none; margin: 0;}
+		#sub #sidebar h2 {padding: 10px}
+		#sub #sidebar #search {height: 40px; background-color: none; margin: 10px 10px; padding: 10px; border-radius: 10px; box-shadow:  0 0 20px #eee; display: flex; align-items: center;}
+		#sub #sidebar #search i {color: black;}
+		#sub #sidebar #search input {width: 90%; margin: 20px 10px; font-size:10px; color: black; outline: none; border: none; padding: 10px; border-radius: 20px; transition: all 0.3s;}
+		#sub #sidebar #search input::placeholder {color:black;}
+
+
+
+
+		#sub #sidebar #recentpost {background-color: none; margin: 20px 10px; padding: 10px 0; border-radius: 10px; box-shadow: 0 0 20px #eee;}
+		#sub #sidebar #recentpost ul {background-color: none; padding: 10px;}
+		#sub #sidebar #recentpost ul li {background-color: none; display: flex; align-items: center; margin: 10px 0px;}
+		#sub #sidebar #recentpost ul li img {width: 80px; height: 80px; margin: 0; border-radius: 50px;}
+		#sub #sidebar #recentpost .p1 {margin: 0 0 0 20px;}
+		#sub #sidebar #recentpost .p1 a {text-decoration: none; cursor: pointer; color: black;}
+		#sub #sidebar #recentpost .p1 a:hover {opacity: 0.7;}
+
+		#sub #sidebar #category {background-color: none; margin: 20px 10px; padding:  10px 0; box-shadow: 0 0 20px #eee; border-radius: 10px;}
+		#sub #sidebar #category ul li a {background-color: none; margin: 0 0 0 -30px; line-height: 30px; text-decoration: none; color: black;}
+		#sub #sidebar #category ul li a:hover {opacity: 0.7;}
+
+		#sub #sidebar #photos {background-color: none; margin: 20px 10px; padding: 10px 0; border-radius: 10px; box-shadow: 0 0 20px #eee;}
+		#sub #sidebar #photos #clips { display: flex; flex-flow: row wrap; justify-content: space-evenly; align-items: center;}
+		#sub #sidebar #photos #clips img {width: 150px; height: 150px; margin: 10px;}
+		#sub #sidebar #photos #clips img:hover {cursor: pointer; opacity: 0.7;}
+
+
+		#sub #sidebar #tags {background-color: none; margin: 20px 10px; padding: 10px 0; border-radius: 10px; box-shadow: 0 0 20px #eee;}
+		#sub #sidebar #tags a {text-decoration: none; color: black; margin: 10px 0 10px 10px; line-height: 30px;}
+		#sub #sidebar #tags a:hover {opacity: 0.7;}
+
+		/*Footer*/
+		footer {width: 100%; height: auto; border-top: 1px solid #eee; margin: 20px 0 0 0px;}
+		footer > #footerbox {width: 90%; height: auto; background-color:none; display:flex; justify-content: space-evenly; align-items: center;}
+		footer #footerbox .fbox:first-child {display: none;}
+
+		.fbox {width:20%; height: 200px; background-color:none;}
+		.fbox #logo2 {background-color: none; width: 100%; height: 100%; display: flex; flex-direction: column;}
+		.fbox > #logo2 > a > img {width: 250px; height: 100%;}
+		.fbox > #logo2 > button {background-color:none; width: 150px; margin: 40px auto; padding: 10px; border-radius: 30px; color: #666; font-weight: bold; font-size: 15px; border: 1px solid #666; cursor: pointer; opacity: 0.5;}
+		.fbox > #logo2 > button:hover {opacity: 1.0; transition: all 0.5s;}
+		.fbox h4 {font-size: 20px;}
+		.fbox ul {background-color: none;}
+		.fbox ul li {font-size: 15px; background-color: none; margin: 15px 0 0 -40px;}
+		.fbox ul li a {text-decoration: none; color: #666;}
+		.fbox ul li a:hover {color:red; transition: all 0.5s;}
+		.fbox span {display: block; font-size: 15px; margin: 15px 0 0 0px;}
+		.fbox span a {text-decoration: none; color: #666;}
+
+		.fbox > .snsbox {background-color: none; width: 45%; height: 50px; display: flex; flex-direction: row; margin: 10px 0 0 0px;}
+		.fbox > .snsbox > .iconbox {width: 50px; height: 50px; background-color: none; margin: 10px;}
+		.fbox > .snsbox > .iconbox > a > img {width: 20px; height: 20px;}
+
+		footer > #footerbox2 {border-top: 1px solid #eee; text-align: center; padding: 20px; color:#666;}
+	}

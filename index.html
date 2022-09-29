@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Score Band</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/max_599.css">
+	<link rel="stylesheet" href="css/min_600.css">
+	<link rel="stylesheet" href="css/min_825.css">
+	<link rel="stylesheet" href="css/min_1100.css">
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".list").click(function(){
+				$("#navi").slideToggle();
+			});
+			$(window).resize(function(){
+				if(window.innerWidth>=1100){
+					$("#navi").show();
+					$(".snsbox").show();
+					
+				}
+				if(window.innerWidth<=1099){
+					$("#navi").hide();
+					$(".snsbox").hide();
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		
+		<div id="logobox">
+			<div id="logo">
+				<a href="main.html"><img src="img/logo_3.jpg" alt="logo_img"></a>	
+			</div>
+			<img src="img/icon_1.jpg" class="list">
+		</div>
+
+		<div id="navbox">
+			<nav id="navi">
+				<ul>
+					<li>HOME</li>
+					<li><a href="sub.html">ABOUT US</a></li>
+					<li><a href="sub.html">TOUR DATES</a></li>
+					<li><a href="sub.html">DISCOGRAPHY</a></li>
+					<li><a href="sub.html">MORE PAGES</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="snsbox">
+			<div class="iconbox">
+				<a href="#"><img src="img/icon_2.jpg" alt="icon1"></a>
+			</div>
+			<div class="iconbox">
+				<a href="#"><img src="img/icon_3.jpg" alt="icon2"></a>
+			</div>
+			<div class="iconbox">
+				<a href="#"><img src="img/icon_4.jpg" alt="icon3"></a>
+			</div>
+		</div>
+
+	</header>
+
+	<!--main-->
+	<div id="main">
+
+		<div id="slider">
+					<h1>"The Metamorph" is released</h1>
+					<h2>2022 Our New Album is Born</h2>
+					<p>
+						Since 2 years, We finally made another album. The Metamorph.
+						You will see our whole concert schedule in this year.<br>
+						Click down the button below.
+					</p>
+					<button>See Schedule</button>
+		</div>
+
+		<div id="section">
+
+			<div id="contentbox">
+				<div id="tag">
+					MUSIC
+				</div>
+				<h3>Our Albums</h3>
+
+				<div id="container">
+					<div class="cbox">
+						<a href="sub.html"><img src="img/img2.jpg" a="img2"></a>
+						<span>Stronger</span>
+					</div>
+					<div class="cbox">
+						<a href="sub.html"><img src="img/img1.jpg" a="img1"></a>
+						<span>Atlas</span>
+					</div>
+					<div class="cbox">
+						<a href="sub.html"><img src="img/img3.jpg" a="img3"></a>
+						<span>Myths & Legend</span>
+					</div>
+					<div class="cbox">
+						<a href="sub.html"><img src="img/img4.jpg" a="img4"></a>
+						<span>Carry On</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="contentbox2">
+				<div id="wrap">
+
+					<div id="textbox">
+						<div id="tag2">
+							VIDEO
+						</div>
+						<h3>New Official Video Released</h3>
+						<span>We are glad to announce the release of our first official video on the new Single.<br>
+						The video was shot in Atlanta, GA and directed by John Peterson, an award-winning videographer.</span>
+						<button><a href="https://youtu.be/Pd940d6fjhI">Watch the Video</a></button>
+					</div>
+
+					<div id="textbox2">
+						<div class="tbox">
+							<h1>900+</h1>
+							<h5>Thousand Downloads</h5>
+						</div>
+						<div class="tbox">
+							<h1>152</h1>
+							<h5>Years on the stage</h5>
+						</div>
+						<div class="tbox">
+							<h1>140</h1>
+							<h5>Top-Rated Songs</h5>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="contentbox3">
+				<div class="container2">	
+					<div id="tbox2">
+						<h3>The Band to Combine<br>
+						Alternative Rock & POP Rock</h3>
+						<p>
+							The Score has gathered in 2015 in New York. colleges<br>
+							to create a true revolution in rock music. They met at <br> New York College
+							when they were about 24 y.o. and<br> quickly became friends thanks to our
+							music taste. we<br> just did what we lovedand somehow became popular.
+						</p>
+					</div>
+					<div class="imgbox">
+						<img src="img/images4.jpg" class="i1">
+					</div>
+				</div>
+				<div class="container2">
+					<div class="imgbox">
+						<img src="img/images2.jpg" class="i1">
+					</div>
+					<div id="tbox3">
+						<h3>Rated #1 Rock Band by <br>
+						Critics and Journalists</h3>
+						<p>The Score gained the love of fans and attention of critics<br>
+						worldwide. They were rated #1 Electronic Rock Band by:</p>
+						<ul>
+							<li>Rock Magazine</li>
+							<li>ThunderEDM Music Blog</li>
+							<li>DigiRock Website</li>
+						</ul>
+						<button class="btn1">View Our Blogs</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="contentbox4">
+				<div id="textbox3">
+					<div id="tag3">
+						PRICING PLANS
+					</div>
+					<h3>Invite Us to Your Event</h3>
+					<span>Do you want to make your event unforgettable? Then we will be glad to help you!<br>
+					Regardless of your venue size, we have a great pricing option for anyone.</span>
+				</div>
+				<div id="article">
+					<article>
+						<h5>Private Party</h5>
+						<p>$2.5k</p>
+						<ul id="ul1">
+							<li>Rock Covers</li>
+							<li>EDM Covers</li>
+							<li>Original Song</li>
+							<li>New Songs</li>
+							<li>Improvisations</li>
+							<li>Extra Options</li>
+						</ul>
+						<button class="btn1">
+							Order Now
+						</button>
+					</article>
+					<article>
+						<h5>Nightclub Party</h5>
+						<p>$5k</p>
+						<ul id="ul2">
+							<li>Rock Covers</li>
+							<li>EDM Covers</li>
+							<li>Original Song</li>
+							<li>New Songs</li>
+							<li>Improvisations</li>
+							<li>Extra Options</li>
+						</ul>
+						<button class="btn1">
+							Order Now
+						</button>
+					</article>
+					<article>
+						<h5>Big Concert</h5>
+						<p>$10k</p>
+						<ul id="ul3">
+							<li>Rock Covers</li>
+							<li>EDM Covers</li>
+							<li>Original Song</li>
+							<li>New Songs</li>
+							<li>Improvisations</li>
+							<li>Extra Options</li>
+						</ul>
+						<button class="btn1">
+							Order Now
+						</button>
+					</article>
+				</div>
+			</div>
+
+			<div id="contentbox5">
+				<div id="textbox4">
+					<div id="tag4">
+						REVIEWS
+					</div>
+					<h3>What our Fans Think</h3>
+				</div>
+
+				<div id="textbox5">
+
+					<div class="box1">
+						<div class="nbox">
+							<img src="img/p1.jpg" class="i1">
+							<span class="n1">Jane Doe</span>
+							<span class="c1">Atlanta, GA</span>
+						</div>
+						<div>
+							<p>
+								<a href="#">#The Score</a> are truly unique in everything they do -
+								both on stage and in studio.I have been following their
+								career for a while now,but I think they are still to be
+								recognized.
+							</p>
+						</div>
+						<div class="D">
+							<img src="img/icon_3.jpg" class="c">
+							<span class="d">April 13, 2022</span>
+						</div>
+					</div>
+
+					<div class="box1">
+						<div class="nbox">
+							<img src="img/p3.jpg" class="i1">
+							<span class="n1">Jane Doe</span>
+							<span class="c1">New York, NY</span>
+						</div>
+						<div>
+							<p>
+								I discoverd <a href="#">#The Score</a> a year ago and got instantly
+								attracted by their unforgettable sound and performance
+								style. You should definitely go and see them live!
+							</p>
+						</div>
+						<div class="D">
+							<img src="img/icon_3.jpg" class="c">
+							<span class="d">April 13, 2022</span>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="nbox">
+							<img src="img/p2.jpg" class="i1">
+							<span class="n1">John Doe</span>
+							<span class="c1">Washington, DC</span>
+						</div>
+						<div>
+							<p>
+								My friends advised me to listen to <a href="">#The Score</a>
+								because I like hard rock and bass music. I've instantly
+								become their biggest fan and I do not regret it at all!
+							</p>
+						</div>
+						<div class="D">
+							<img src="img/icon_3.jpg" class="c">
+							<span class="d">April 13, 2022</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contentbox6">
+				<div id="textbox6">
+					<div id="tag5">
+						DOWNLOAD OUR MUSIC
+					</div>
+					<h3>You Can Listen To Our Music On Any Device</h3>
+					<span>
+						Our singles and albums are already available on Apple Music and Google Play Music.<br>
+						Just select your favorite service and listen to our tracks on any device.
+					</span>
+					<div id="btng">
+						<button id="btn2">Apple Music</button>
+						<button id="btn3">Google Music</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+<footer>
+	<div id="footerbox">
+		<div class="fbox">
+			<div id="logo2">
+				<a href="#"><img src="img/logo_3.jpg" alt="logo_img"></a>
+				<button>Sign In</button>			
+			</div>
+		</div>
+		<div class="fbox">
+			<h4>About</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press and Media</a></li>
+			</ul>
+		</div>
+		<div class="fbox">
+			<h4>Features</h4>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+		<div class="fbox">
+			<h4>Contact</h4>
+			<span><a href="#">info@demolink.org</a></span>
+			<span><a href="#">+1-953-234-65</a></span>
+			<div class="snsbox">
+				<div class="iconbox">
+					<a href="#"><img src="img/icon_2.jpg" alt="icon1"></a>
+				</div>
+				<div class="iconbox">
+					<a href="#"><img src="img/icon_3.jpg" alt="icon2"></a>
+				</div>
+				<div class="iconbox">
+					<a href="#"><img src="img/icon_4.jpg" alt="icon3"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footerbox2">
+		@ 2022 The Score. Copyright.
+	</div>
+</footer>
+
+</html>
+

@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+@media (min-width: 600px){
+	/*header*/
+	header {
+		width: 100%; background-color: #fff; 
+		display: flex; flex-direction: column;
+		position: absolute; top: 0; left: 0;
+		opacity: 1.0;
+	}
+	header #logobox {width: 100%; background-color: none; 
+		display: flex; justify-content: space-between; align-items: center;
+	}
+	header #logobox #logo {width: 180px; height: 50px; background-color: none;}
+	header #logobox #logo a img {width: 100%; height: 100%; padding: 5px;}
+	header #logobox .list {cursor: pointer; width: 30px; height: 30px; background-color: none;}
+
+	header #navi {background-color: none;}
+	header #navi ul {margin: 0 0 0 -40px; background-color: none;}
+	header #navi ul li:first-child {color: #06284a; font-weight: bold; line-height: 30px; padding: 10px; display: block;}
+	header #navi ul li a {text-decoration:none; background-color: none; color: #06284a; font-weight: bold; line-height: 30px; padding: 10px; display: block;}
+	header #navi ul li a:hover {color: #fff; background-color: #303942; transition: all 0.5s;}
+
+	header .snsbox {width: 120px; height: 50px; background-color: none; display: flex; justify-content: space-around; align-items: center;}
+	header .snsbox .iconbox {width: 30px; height: 30px; background-color: none; padding: 5px; margin: 5px;}
+	header .snsbox .iconbox a img {width: 15px; height: 15px;}
+
+
+	header #navi {display: none;}
+	header #list {display: block;}
+	header .snsbox {display: none;}
+
+	/*main 시작*/
+	#main {width:100%; height:auto; background-color: none;}
+
+	/*slider*/
+	#slider {width:100%; height: 600px; background:url("../img/slider_2.jpg")fixed; background-size: cover; background-position: center;}
+	#slider h1 {font-size: 30px; text-align: center; background-color: none; color: #fff; padding: 200px 0 0 0px;text-align: center; margin: 0;}
+	#slider h2 {font-size: 25px; text-align: center; background-color: none; color: #fff; margin: 10px auto;}
+	#slider p {font-size: 20px; text-align: center; color: #fff;}
+	#slider button {display: block; margin: 30px auto; text-align: center; width: 150px; padding: 10px; border-radius: 30px; border:none; cursor: pointer; opacity: 0.8;}
+	#slider button:hover {opacity: 1.0; transition: all 0.5s;}
+
+
+
+	#section {width:100%; height: auto; background-color:none;}
+
+	/*Our Albums*/
+	#contentbox {width: 100%; height: auto; background-color: none; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 100px auto;}
+	#contentbox > h3 {font-size: 40px; text-align:center; background-color: none; margin: 0 0 30px 0px}
+	
+	#tag {width: 70px; font-size: 15px; text-align:center; background-color: red; padding:5px; border-radius: 15px; margin: 20px 0 20px 0px; font-weight: bold;}
+	
+	#container {width: 100%; height: auto; background-color: none; display: flex; flex-flow:row wrap; justify-content: space-evenly ; align-items: center;}
+	#container .cbox {width: 250px; height: 300px; font-size: 20px; background-color: none; margin: 10px 10px 30px 10px; text-align: center; border-radius: 10px; box-shadow:0 0 20px lightgrey;}
+	#container .cbox span {font-weight: bold; display: block; margin: 20px;}
+	#container .cbox img {width: 100%; height: 75%; background-color: none; border-radius: 10px;}
+	#container .cbox img:hover {opacity: 0.8; transition: all 0.5s;}
+
+	/*New Release*/
+	#contentbox2 {background:url("../img/images.jpg")fixed; background-size:cover; width: 100%; height:1000px;}
+	#wrap {width:90%; height: auto; background-color: none; position: relative; top: 150px; display: flex; flex-direction: column; flex-flow: row wrap; margin: 0 auto;}
+	
+	#tag2 {width: 70px; font-size: 15px; text-align:center; background-color: red; padding: 5px; border-radius: 15px; margin: 20px 0 20px 0px; font-weight: bold; line-height:20px;}
+	
+	#contentbox2 > #wrap > #textbox {width: 100%; height: 150px; background-color: none; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; line-height: 30px; padding: 20px 10px;}
+	#textbox > h3 {font-size: 30px; color: #fff;}
+	#textbox > span {color: #fff; display: block; background-color: none; margin:30px;}
+	#textbox > button {background-color: cyan; width: 150px; border-radius: 30px; padding: 5px; border: none; margin: 0 0 50px 0px}
+	#textbox > button > a {text-decoration: none; color: #fff; opacity: 0.8; font-weight: bold;}
+	#textbox > button:hover {cursor: pointer; opacity: 1.0; transition: all 0.5s;}
+	#contentbox2 > #wrap > #textbox2 {width: 55%; height: auto; background-color:#fff; padding: 20px; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; border-radius: 30px; margin: 90px auto;}
+	#contentbox2 > #wrap > #textbox2 > .tbox {width: 70%; height: 150px; background-color: none; margin: 10px}
+	#textbox2 > .tbox {display:flex; flex-direction: column; flex-flow: row wrap; justify-content: center; align-content: center;}
+	#textbox2 > .tbox > h1 {font-size: 60px; text-align: center;}
+	#textbox2 > .tbox > h5 {font-size: 20px; text-align: center; margin: -30px 0 0 0px;}
+
+	/*Introducing about*/
+	#contentbox3 {width: 100%; height: auto; background-color:none; margin: 100px auto; display: flex; flex-direction: column; justify-content: center;}
+	#contentbox3 .container2 {width: 85%; display:flex; flex-flow:row wrap; background-color: none; margin: 50px auto;}
+	#contentbox3 .container2 #tbox2 h3 {font-size: 35px; background-color: none; padding: 5px;}
+	#contentbox3 .container2 #tbox2 p {fons-size: 30px; background-color: none; padding: 5px; line-height: 28px; color: grey; margin: 20px 0 0 0px;}
+	#contentbox3 .container2 #tbox2 {width: 100%; height:350px;}
+
+	#contentbox3 .container2 #tbox3 h3 {font-size: 35px; background-color: none; padding: 5px;}
+	#contentbox3 .container2 #tbox3 p {fons-size: 30px; background-color: none; padding: 5px; line-height: 28px; color: grey; margin: 20px 0 0 0px;}
+	#contentbox3 .container2 #tbox3 {width: 100%; height:350px;}
+	#contentbox3 .container2 .imgbox {width: 100%; height:350px;}
+	#contentbox3 .container2 img{width: 100%; height: 100%;}
+	
+	#contentbox3 > .container2 > #tbox3 > ul {margin:0 0 0 -35px;}
+	#contentbox3 > .container2 > #tbox3 > ul > li {margin: 5px auto; font-weight: bold;}
+	#contentbox3 #tbox3 .btn1 {width: 180px; text-align: center; font-weight: bold; padding: 10px; cursor: pointer; border-radius: 20px; border: none; background-color: orange; opacity: 0.7; margin: 30px auto;}
+	#contentbox3 #tbox3 .btn1:hover {opacity: 1.0; transition:all 0.5s;}
+
+	/*Pricing Plans*/
+	#contentbox4 {width: 100%; height: auto; background:url("../img/slider_5.jpg")fixed;}
+	#tag3 {width: 200px; font-size: 15px; text-align:center; background-color: red; padding: 5px; border-radius: 15px; margin: 40px auto; font-weight: bold; line-height:20px; display: block;}
+	#textbox3 {width: 100%; background-color: none; text-align: center; display: flex; flex-direction: column;}
+	#textbox3 h3 {width: 90%; font-size: 30px; background-color: none; margin: 20px auto; color: #fff;}
+	#textbox3 span {width: 90%; font-size: 15px; font-weight: bold; background-color: none; color: #fff; line-height: 30px; margin: 20px auto;}
+	#article {background-color:none; display: flex; flex-flow: row wrap; justify-content: space-evenly; align-items: center; padding: 30px 0 0 0px}
+	#article > article {width: 55%; height: auto; background-color:#fff; border-radius: 20px; margin: 0 0 80px 0px;}
+	#article > article > h5 {text-align:center; font-size: 20px; color: red; margin: 25px 0px;}
+	#article > article > p {background-color:none;text-align:center; font-size: 50px; font-weight: bold; margin: 0 0 20px 0px;}
+	#article > article > ul {margin: 0 0 0 -40px; background-color: none; display: flex; flex-flow: column wrap;}
+	#article > article > ul > li{margin: 15px auto;}
+	#article > article > #ul1 > li:nth-child(n+3):nth-child(-n+6) {color: #eee;}
+	#article > article > #ul2 > li:nth-child(n+5):nth-child(-n+6) {color: #eee;}
+	#article > article > .btn1{display:block; width: 120px; padding: 10px; margin: 30px auto; border-radius: 20px; color:#666; border: 1px solid #666; background-color: #eee; opacity:0.4; }
+	#article > article > .btn1:hover {opacity: 1.0; transition:all 0.5s; cursor: pointer;}
+
+	/*Review*/
+	#contentbox5 {width: 100%; height: auto; background-color: none; margin: 80px auto;}
+	#textbox4 {width: 90%; background-color: none; text-align: center; display: flex; flex-direction: column; margin: 0 auto;}
+	#textbox4 #tag4 {width: 100px; font-size: 15px; text-align:center; background-color: red; padding: 5px; border-radius: 15px; font-weight: bold;  display: block; margin: 30px auto;}
+	#textbox4 h3 {font-size:  30px; background-color: none; margin: 0 0 50px 0px; color: black;}
+	
+	#textbox5 {width: 90%; background-color: none; margin: 0 auto; display: flex; flex-flow: row wrap; justify-content: space-evenly; align-items: center;}
+	#textbox5 .box1 {width: 60%; height: auto; background-color: none; border-radius: 20px; margin: 0 0 50px 0px; box-shadow: 0 0 30px #eee; padding: 15px;}
+	#textbox5 .box1 .nbox { padding:10px; display: flex; flex-direction: column;}
+	#textbox5 .box1 .i1 {border-radius: 50px; margin: 5px auto;}
+	#textbox5 .box1 .n1, .c1 {display: block; font-weight: bold; margin: 0 auto;}
+	#textbox5 .box1 .c1 {color: red;}
+	#textbox5 .box1 p {color: #666; text-align: center;}
+	#textbox5 .box1 p a {text-decoration: none; color: red;}
+	#textbox5 .D {display: flex; flex-direction: column; margin: 20px;}
+	#textbox5 .d {display: block; margin: 0 auto;}
+	#textbox5 .c {width: 25px; height: 25px; opacity: 0.3; margin: 0 auto;}
+
+	/*Download our music*/
+	#contentbox6 {width: 100%; height: 450px; background-image: url("../img/slider_3.jpg"); margin: 100px 0 0 0px;}
+	#textbox6 {width:100%; background-color: none; text-align: center; display: flex; flex-direction: column; position: relative; top: 30px;}
+
+	#textbox6 #tag5 {width: 250px; font-size: 15px; background-color: red; padding: 5px; border-radius: 15px; font-weight: bold;  display: block; margin: 40px auto;}
+	
+	#textbox6 h3 {font-size: 30px; background-color: none; margin: 0 0 10px 0px; color: #fff;}
+	#textbox6 span {color: #fff; display: block; margin: 30px;}
+	#textbox6 #btng {width: 100%; display:flex; justify-content: space-evenly;}
+	#textbox6 #btn2 {background-color: #0dbec6; width: 150px; padding: 12px 10px; border-radius: 30px; text-align: center; border: none; color: #fff; font-weight: bold; cursor: pointer;}
+	#textbox6 #btn3 {background-color: #1c5cca; width: 150px; padding: 12px 10px; border-radius: 30px; text-align: center; border: none; color: #fff; font-weight: bold; cursor: pointer;}
+
+	/*Footer*/
+	footer {width: 100%; height: auto; border-top: 1px solid #eee; margin: 20px 0 0 0px;}
+	footer #footerbox {width: 100%; height: auto; background-color:none; display:flex; justify-content: space-evenly; align-items: center;}
+	footer #footerbox .fbox:first-child {display: none;}
+
+	.fbox {width:20%; height: 200px; background-color:none;}
+	.fbox #logo2 {background-color: none; width: 100%; height: 100%; display: flex; flex-direction: column;}
+	.fbox > #logo2 > a > img {width: 250px; height: 100%;}
+	.fbox > #logo2 > button {background-color:none; width: 150px; margin: 40px auto; padding: 10px; border-radius: 30px; color: #666; font-weight: bold; font-size: 15px; border: 1px solid #666; cursor: pointer; opacity: 0.5;}
+	.fbox > #logo2 > button:hover {opacity: 1.0; transition: all 0.5s;}
+	.fbox h4 {font-size: 20px;}
+	.fbox ul {background-color: none;}
+	.fbox ul li {font-size: 15px; background-color: none; margin: 15px 0 0 -40px;}
+	.fbox ul li a {text-decoration: none; color: #666;}
+	.fbox ul li a:hover {color:red; transition: all 0.5s;}
+	.fbox span {display: block; font-size: 15px; margin: 15px 0 0 0px;}
+	.fbox span a {text-decoration: none; color: #666;}
+
+	.fbox > .snsbox {background-color: none; width: 45%; height: 50px; display: flex; flex-direction: row; margin: 10px 0 0 0px;}
+	.fbox > .snsbox > .iconbox {width: 50px; height: 50px; background-color: none; margin: 10px;}
+	.fbox > .snsbox > .iconbox > a > img {width: 20px; height: 20px;}
+
+	footer > #footerbox2 {border-top: 1px solid #eee; text-align: center; padding: 20px; color:#666;}
+}
